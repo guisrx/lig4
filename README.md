@@ -12,13 +12,13 @@ The input of the algorithm in the method 'move' is a list of available columns t
 
 I used a hierarchy of searches for patterns in the game board in the following order:
 
-1. vertical: plays in a column of 3 stones of equal color, to win or to prevent a defeat.
-2. opening: opening strategy, plays in the middle column if possible and tries to fill 4 columns in the inverse direction of the other player first move.
-3. horizontal: searches for a sequence of 3 stones horizontally and an open position to win or to prevent a defeat.
-4. leftDiagonal: searches for a sequence of 3 stones int the left diagonal and an open position to win or to prevent a defeat.
-5. rightDiagonal: searches for a sequence of 3 stones in the right diagonal and an open position to win or to prevent a defeat.
-6. worthPlay: searches for a position where is possible to form a winning sequence with the stones found in the game board.
-7. fallback: plays in a position with three more open spaces or where is possible.
+1. **vertical**: plays in a column of 3 stones of equal color, to win or to prevent a defeat.
+2. **opening**: opening strategy, plays in the middle column if possible and tries to fill 4 columns in the inverse direction of the other player first move.
+3. **horizontal**: searches for a sequence of 3 stones horizontally and an open position to win or to prevent a defeat.
+4. **leftDiagonal**: searches for a sequence of 3 stones int the left diagonal and an open position to win or to prevent a defeat.
+5. **rightDiagonal**: searches for a sequence of 3 stones in the right diagonal and an open position to win or to prevent a defeat.
+6. **worthPlay**: searches for a position where is possible to form a winning sequence with the stones found in the game board.
+7. **fallback**: plays in a position with three more open spaces or where is possible.
 
 ### To Do ###
 
